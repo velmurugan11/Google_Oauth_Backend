@@ -54,7 +54,7 @@ public class Userlogincontroller {
         String idTokenString = body.get("token");
 
         GoogleIdTokenVerifier verifier = new GoogleIdTokenVerifier.Builder(new NetHttpTransport(), JacksonFactory.getDefaultInstance())
-                .setAudience(Collections.singletonList("279136439919-v4hrnqqvqfol2ufpe51g5da6po7el5hf.apps.googleusercontent.com"))
+                .setAudience(Collections.singletonList("google-oauth-id"))
                 .build();
 
         try {
